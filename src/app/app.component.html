@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a9d1ee;">
   <a class="navbar-brand" href="#">Web Dev</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,16 +7,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Angular</a>
+        <a class="nav-link active" aria-current="page" [routerLink]="['/angular']">Angular</a>
       </li>
       <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#">My Hobby Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Roadmap</a>
+        <a class="nav-link active" aria-current="page" [routerLink]="['/roadmaps']">Roadmap</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Revision and cheat-sheet</a>
+        <a class="nav-link active" aria-current="page" [routerLink]="['/revision-cheat-sheet']" >Revision and cheat-sheet</a>
       </li>
     </ul>
     <form class="d-flex">
@@ -25,71 +25,4 @@
     </form>
   </div>
 </nav>
-
-<div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
-  <div class="col">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">Angular Routing</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-          content. This content is a little bit longer.</p>
-        <div class="mt-auto">
-          <a href="#" class="btn btn-primary m-2">Code</a>
-          <a href="#" class="btn btn-primary">Live Demo</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">Route and Auth guards</h5>
-        <p class="card-text">This is a short card.</p>
-        <div class="mt-auto">
-          <a href="#" class="btn btn-primary m-2">Code</a>
-          <a href="#" class="btn btn-primary">Live Demo</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">Hoisting in Javascript</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-          content.</p>
-        <div class="mt-auto">
-          <a href="#" class="btn btn-primary m-2">Code</a>
-          <a href="#" class="btn btn-primary">Live Demo</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">Crud App- JSON server</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-          content. This content is a little bit longer.</p>
-        <div class="mt-auto">
-          <a href="#" class="btn btn-primary m-2">Code</a>
-          <a href="#" class="btn btn-primary">Live Demo</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">Vanila JS DOM Project</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-          content. This content is a little bit longer.</p>
-        <div class="mt-auto">
-          <a href="#" class="btn btn-primary m-2">Code</a>
-          <a href="#" class="btn btn-primary">Live Demo</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 <router-outlet></router-outlet>

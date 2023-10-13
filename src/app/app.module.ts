@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { RoadmapsComponent } from './components/roadmaps/roadmaps.component';
 import { AngularComponent } from './components/angular/angular.component';
 import { RevisionCheatSheetComponent } from './components/revision-cheat-sheet/revision-cheat-sheet.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RoadmapsComponent,
     AngularComponent,
-    RevisionCheatSheetComponent
+    RevisionCheatSheetComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
