@@ -8,6 +8,7 @@ import { AngularComponent } from './components/angular/angular.component';
 import { RevisionCheatSheetComponent } from './components/revision-cheat-sheet/revision-cheat-sheet.component';
 import { HomeComponent } from './components/home/home.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MatCardModule} from '@angular/material/card';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
